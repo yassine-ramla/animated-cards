@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card1, .card2, .card3, .card4{
+    margin: 100px;   /*addition*/
+    width: 21vw;
+    min-width: 200px;
+    min-height: 200px;
+    color: #002A58;
+    overflow: hidden;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F4F7;
+    border-radius: 10px;
+    position: relative;
+    transition: all .7s ease-in-out;
+}
+.nember{
+    font-weight: 700;
+    font-size: 2.9em;
+    line-height: 120%;
+    margin-top: 2.65vw;
+    z-index: 2;
+}
+.title{
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-top: .7vw;
+    z-index: 2;
+}
+svg{
+    z-index: 2;
+}
+svg path {
+    transition: all .8s ease-in-out;
+}
+.card1:hover svg path, .card2:hover svg path, .card3:hover svg path, .card4:hover svg path{
+    fill: #f9fbfa;
+}
+.card3:hover .partnersSvgIn{
+    fill: #5D95CE;
+}
+.circle1{
+    width: 19.6vw;
+    height: 19.6vw;
+    border-radius: 50%;
+    background-color: #eff0f5;
+    position: absolute; 
+    top: -9vw;
+    left: -9vw;
+    transition: all .7s ease-in-out;
+    z-index: 1;
+}
+.circle2{
+    width: 16vw; 
+    height: 16vw; 
+    border-radius: 50%;
+    background-color: #e8eaf1;
+    transition: all .7s ease-in-out;
+    z-index: 1;
+}
+.card2 .circle1{
+    transform: translate(19vw, 1vw) rotate(90deg);
+}
+.card2:hover .circle1{
+    transform: translate(0, -8vw) rotate(90deg);
+}
+.card3 .circle1{
+    transform:  translate(19vw, 16vw) rotate(180deg);
+}
+.card3:hover .circle1{
+    transform: translate(2vw, -2vw) rotate(90deg);
+}
+.card4 .circle1{
+    transform: translate(0, 16vw) rotate(-90deg);
+}
+.card4:hover .circle1{
+    transform: translate(0, -10vw) rotate(90deg);
+}
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+    color:#f9fbfa;
+}
+.card1:hover .circle1, .card2:hover .circle1, .card3:hover .circle1, .card4:hover .circle1{
+    width: 55.6vw;
+    height: 55.6vw;
+    background-color: #5D95CE;
+    z-index: 1;
+}
+.card1:hover .circle2, .card2:hover .circle2, .card3:hover .circle2, .card4:hover .circle2{
+    width: 55.6vw;
+    height: 55.6vw;
+    background-color:#5D95CE;
+    z-index: 1;
+}

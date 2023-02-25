@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+h1{
+    font-family: 'Source Sans Pro';
+}
+h2{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+div{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+}
